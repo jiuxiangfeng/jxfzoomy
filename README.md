@@ -75,3 +75,4 @@ $('#container').jxfZoomy();
 
 
 # License
+MIT License

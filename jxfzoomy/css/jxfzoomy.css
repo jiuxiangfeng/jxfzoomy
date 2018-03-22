@@ -1,0 +1,125 @@
+.jxfzoomy-container ul{
+    margin: 0;
+    padding: 5px 0 0 0;
+    list-style: none;
+}
+.jxfzoomy-container img{
+    vertical-align: top;
+}
+.jxfzoomy-container{
+    position: relative;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.jxfzoomy-small-box{
+    position: relative;
+    border: 1px solid #ccc;
+    display:table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+/* .jxfzoomy-small-box i{
+    height: 100%;
+    display:inline-block;
+    vertical-align: middle;
+} */
+.jxfzoomy-small-box-move{
+    display:inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+.jxfzoomy-small-box .mask{
+    position: absolute;
+    background-color: #000;
+    display: none;
+    cursor: move;
+    /* older safari/Chrome browsers */  
+    -webkit-opacity: 0.5;  
+    /* Netscape and Older than Firefox 0.9 */  
+    -moz-opacity: 0.5;  
+    /* Safari 1.x (pre WebKit!) 老式khtml内核的Safari浏览器*/  
+    -khtml-opacity: 0.5;  
+    /* IE9 + etc...modern browsers */  
+    opacity: .5;  
+    /* IE 4-9 */  
+    filter:alpha(opacity=50);  
+    /*This works in IE 8 & 9 too*/  
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";  
+    /*IE4-IE9*/  
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=50);  
+}
+.jxfzoomy-big-box{
+    position:absolute;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    width:0;
+    height: 0;
+}
+.jxfzoomy-big-box .jxfzoomy-big-img{
+    position:absolute;
+}
+.jxfzoomy-thumb-box{
+    position: relative;
+    margin-right: 20px;
+    overflow: hidden;
+}
+.jxfzoomy-thumb-lt{
+    position: absolute;
+    text-align: center;
+    left: 0;
+    /* border: solid 1px #bbb; */
+    margin-top: 5px;
+    width: 13px;
+    height: 50px;
+    line-height: 50px;
+    color:#999;
+    cursor: pointer;
+    /* border-radius: 5px 0 0 5px; */
+    font-weight: bold;
+    font-size: 28px;
+    font-family: '黑体';
+}
+.jxfzoomy-thumb-gt{
+    position: absolute;
+    text-align: center;
+    right:0;
+    /* border: solid 1px #bbb; */
+    margin-top: 5px;
+    width: 13px;
+    height: 50px;
+    line-height: 50px;
+    color:#999;
+    cursor: pointer;
+    /* border-radius: 0 5px 5px 0; */
+    font-weight: bold;
+    font-size: 28px;
+    font-family: '黑体';
+}
+.jxfzoomy-thumb-ct{
+    overflow: hidden;
+}
+.jxfzoomy-list-img{
+    float:left;
+    width: 5000px;
+    margin-top: 5px;
+}
+.jxfzoomy-list-img .jxfzoomy-active{
+    border:solid 1px red;
+}
+.jxfzoomy-list-img li{
+    float: left;
+    margin-left: 5px;
+    border: 1px solid #eee;
+}
+.jxfzoomy-list-img li div{
+    display:table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+/* .jxfzoomy-list-img li img{
+    max-width: 50px;
+    max-height: 50px;
+} */
+.jxfzoomy-clearfix:before,.jxfzoomy-clearfix:after { content: ""; display: table; }
+.jxfzoomy-clearfix:after { clear: both; }
+.jxfzoomy-clearfix { *zoom: 1;clear: both; }/*此处没有clear: both;再某些情况下清除浮动无效*/

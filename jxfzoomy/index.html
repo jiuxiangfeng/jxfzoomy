@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>放大镜</title>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jxfzoomy.js"></script>
+    <link rel="stylesheet" href="css/jxfzoomy.css">
+    <script>
+        //页面加载完毕后执行
+        $(document).ready(function () {
+            $('#container').jxfZoomy({
+            smallBoxW: 350,//小图框的宽 单位px 默认250px
+            smallBoxH: 250,//小图框的高 单位px 默认250px
+            bigBoxW: 450, //大图放大镜框的宽 单位px 默认350px
+            bigBoxH: 350, //大图放大镜框的高 单位px 默认350px
+            smallListImgW:80,//缩略图的宽 单位px 默认50px
+            smallListImgH:50,//缩略图的高 单位px 默认50px
+            moveSpeed:100 //缩略图点击左右方向键移动的速度 单位px 默认50px
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 基本格式 -->
+    <div id="container" class='jxfzoomy-container'>
+        <div class="jxfzoomy-thumb-box">
+            <div class="jxfzoomy-thumb-ct">
+                <ul class='jxfzoomy-list-img jxfzoomy-clearfix'>
+                    <!-- 有jxfzoomy-active为当前选中的图片 data-smallImg属性为小图路径 
+                    data-bigImg属性为大图路径 <li>标签内部的img为缩略图 -->
+                    <li class='jxfzoomy-active' data-smallImg="images/0_min.jpg" data-bigImg="images/0_big.jpg">
+                        <div>
+                            <img src="images/0_thumb.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-smallImg="images/1_min.jpg" data-bigImg="images/1_big.jpg">
+                        <div>
+                            <img src="images/1_thumb.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-smallImg="images/2_min.jpg" data-bigImg="images/2_big.jpg">
+                        <div>
+                            <img src="images/2_thumb.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-smallImg="images/3_min.jpg" data-bigImg="images/3_big.jpg">
+                        <div>
+                            <img src="images/3_thumb.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-smallImg="images/4_min.jpg" data-bigImg="images/4_big.jpg">
+                        <div>
+                            <img src="images/4_thumb.jpg" alt="">
+                        </div>
+                    </li>
+                    <li data-smallImg="images/5_min.jpg" data-bigImg="images/5_big.jpg">
+                        <div>
+                            <img src="images/5_thumb.jpg" alt="">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

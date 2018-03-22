@@ -6,9 +6,9 @@
 # Quick Start
 
 ### Step 1:
-1. Copy `xzoom.min.js` or `xzoom.js` file into your javascript folder.
-2. Copy `xzoom.css` file into your css folder, or copy the content of the `xzoom.css` file into your site style sheet.
-3. Copy `example/images/xloading.gif` to your images folder.
+1. Copy `jxfzoomy.js` file into your javascript folder.
+2. Copy `jxfzoomy.css` file into your css folder, or copy the content of the `jxfzoomy.css` file into your site style sheet.
+
 
 ### Step 2:
 This goes into your site's Header Section:
